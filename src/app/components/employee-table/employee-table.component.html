@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Employee Details</h2>
+  
+  <div *ngIf="loading" class="loading">Loading employees...</div>
+  
+  <table *ngIf="!loading && employees.length > 0" class="table">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+        <th>Email</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.employeeId }}</td>
+        <td>{{ emp.employeeName }}</td>
+        <td>{{ emp.department }}</td>
+        <td>{{ emp.designation }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.contactNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

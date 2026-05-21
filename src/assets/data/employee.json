@@ -1,0 +1,76 @@
+{
+  "employees": [
+    {
+      "employeeId": "207001",
+      "employeeName": "Pankaj Kumar",
+      "department": "IT",
+      "designation": "Software Engineer",
+      "email": "pankaj.kumar@google.com",
+      "contactNumber": "9876543210"
+    },
+    {
+      "employeeId": "207002",
+      "employeeName": "Aditi Sharma",
+      "department": "HR",
+      "designation": "HR Manager",
+      "email": "aditi.sharma@slice.com",
+      "contactNumber": "9876543211"
+    },
+    {
+      "employeeId": "207003",
+      "employeeName": "Mahendra Singh",
+      "department": "Finance",
+      "designation": "Accountant",
+      "email": "mahendra.singh@flipkart.com",
+      "contactNumber": "9876543212"
+    },
+    {
+      "employeeId": "207004",
+      "employeeName": "Charan Goud",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "email": "goud.charan1@uber.com",
+      "contactNumber": "9876543213"
+    },
+    {
+      "employeeId": "207005",
+      "employeeName": "Anand Kumar",
+      "department": "IT",
+      "designation": "Senior Developer",
+      "email": "anand.kumar@meta.com",
+      "contactNumber": "9876543214"
+    },
+    {
+      "employeeId": "207006",
+      "employeeName": "Priya Singh",
+      "department": "HR",
+      "designation": "HR Executive",
+      "email": "priya.singh@meesho.com",
+      "contactNumber": "9876543215"
+    },
+    {
+      "employeeId": "207007",
+      "employeeName": "Rohit Verma",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "email": "rohit.verma@flipkart.com",
+      "contactNumber": "9876543216"
+    },
+    {
+      "employeeId": "207008",
+      "employeeName": "Sneha Patel",
+      "department": "Marketing",
+      "designation": "Marketing Executive",
+      "email": "sneha.patel@uber.com",
+      "contactNumber": "9876543217"
+    },
+    {
+      "employeeId": "207009",
+      "employeeName": "Vikram Singh",
+      "department": "IT",
+      "designation": "DevOps Engineer",
+      "email": "vikram.singh@reddit.com",
+      "contactNumber": "9876543218"
+    }
+  ]
+}

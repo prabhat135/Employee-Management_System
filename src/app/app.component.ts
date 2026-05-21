@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeeTableComponent } from './components/employee-table/employee-table.component';
+import { LeaveFormComponent } from './components/leave-form/leave-form.component';
+ 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [HttpClientModule, EmployeeTableComponent, LeaveFormComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'leave-app';
+  title = 'Leave Management System';
 }

@@ -1,0 +1,73 @@
+<div class="form-container">
+  <h2>Leave Application Form</h2>
+ 
+  <div *ngIf="successMsg" class="success">✓ {{ successMsg }}</div>
+  <div *ngIf="errorMsg" class="error">✗ {{ errorMsg }}</div>
+ 
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+      <label>Employee ID *</label>
+      <input type="text" formControlName="employeeId" class="input">
+      <span *ngIf="form.get('employeeId')?.invalid && form.get('employeeId')?.touched" class="error-text">
+        {{ getError('employeeId') }}
+      </span>
+    </div>
+ 
+    <div class="form-group">
+      <label>Employee Name *</label>
+      <input type="text" formControlName="employeeName" class="input">
+      <span *ngIf="form.get('employeeName')?.invalid && form.get('employeeName')?.touched" class="error-text">
+        {{ getError('employeeName') }}
+      </span>
+    </div>
+ 
+    <div class="form-group">
+      <label>Email *</label>
+      <input type="email" formControlName="email" class="input">
+      <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="error-text">
+        {{ getError('email') }}
+      </span>
+    </div>
+ 
+    <div class="form-group">
+      <label>Leave Type *</label>
+      <select formControlName="leaveType" class="input">
+        <option value="">-- Select --</option>
+        <option *ngFor="let type of leaveTypes" [value]="type">{{ type }}</option>
+      </select>
+      <span *ngIf="form.get('leaveType')?.invalid && form.get('leaveType')?.touched" class="error-text">
+        {{ getError('leaveType') }}
+      </span>
+    </div>
+ 
+    <div class="form-row">
+      <div class="form-group">
+        <label>From Date *</label>
+        <input type="date" formControlName="fromDate" class="input">
+        <span *ngIf="form.get('fromDate')?.invalid && form.get('fromDate')?.touched" class="error-text">
+          {{ getError('fromDate') }}
+        </span>
+      </div>
+      <div class="form-group">
+        <label>To Date *</label>
+        <input type="date" formControlName="toDate" class="input">
+        <span *ngIf="form.get('toDate')?.invalid && form.get('toDate')?.touched" class="error-text">
+          {{ getError('toDate') }}
+        </span>
+      </div>
+    </div>
+ 
+    <div class="form-group">
+      <label>Reason *</label>
+      <textarea formControlName="reason" class="input textarea" placeholder="Minimum 10 characters"></textarea>
+      <span *ngIf="form.get('reason')?.invalid && form.get('reason')?.touched" class="error-text">
+        {{ getError('reason') }}
+      </span>
+    </div>
+ 
+    <div class="buttons">
+      <button type="submit" class="btn-submit" [disabled]="submitted">Submit</button>
+    </div>
+  </form>
+</div>
